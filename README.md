@@ -1,73 +1,69 @@
+# Hospital Management System
 
-# Content Management System
+![Front End](FrontEnd.png)
 
-Welcome to our CMS (Content Management System)
+## Front End
 
-## Getting Started
+![Front End](FrontEnd.png)
 
-To get started with the CMS, follow these steps:
+## Back End
 
-git clone url
+![Back End](admin-screenshot.png)
 
-# Install composer dependency
+## Database Tables
 
+![Database Tables](Tables_Screenshot.png)
+
+## Installation
+
+Follow these instructions to set up and run the project locally on your Machine.
+
+### Prerequisites
+
+- [Git](https://git-scm.com/)
+- [Composer](https://getcomposer.org/)
+- [PHP](https://www.php.net/)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+   git clone url
+```
+ ```bash
+   cd hospitalMS
+```
+
+ ```bash
 composer install
-
-# Install node modules
-
-npm install / yarn
-
-# Copy environment file
-
+```
+ ```bash
 cp .env.example .env
-
-# Set the Application key
-
+```
+```bash
 php artisan key:generate
+ ```
+```bash
+php artisan storage:link
+```
+ ```bash
+ php artisan migrate:fresh --seed
+```
+ ```bash
+ php artisan serve
+```
 
-# setup the database credentials and migrate database
+## Admin Credentials
+Admin: 
+```bash 
+tauseed@test.com
+```
+Password: 
+```bash
+tauseed
+```
 
-php artisan migrate
+## If you like our project please leave a star ❤
 
-# Damy data Insert with Seeder && Factory
-
-php artisan migrate:fresh --seed
-
-### [ Feature List ]
-
--   Content Management System
--   User Friendly Admin Dashboard
--   Category Management
--   Blog Management
--   Service Management
--   Gallery Management
--   Testimonial Management
--   Pricing Plans
--   FAQ Management
--   Team Management
--   Site Settings
--   Changes Color on Website
-
-# [ Plugins ]
-
--   Fontawsome icon
--   Bootstarp Icon
--   ColorPiker
--   Dropify Image Upload
--   Selete2
--   Sweet Alert 2
--   Toastr Notification
--   Data Table
-
-# Frontend
-
- <img src="public/demo/screencapture-127-0-0-1-8000-website-2024-11-22-02_57_12.png">
-# Blog Page
- <img src="public/demo/127.0.0.1_8000_website_blog.png">
-# Service Page
- <img src="public/demo/127.0.0.1_8000_website_service.png">
-# Gallery Page
- <img src="public/demo/127.0.0.1_8000_website_gallery.png">
- # Contact Page
- <img src="public/demo/127.0.0.1_8000_website_contact-us.png">
 #
