@@ -9,7 +9,7 @@ class Dashboard extends Component
     public function render()
     {
         return view('livewire.admins.dashboard',[
-            'employees'=>\App\Models\Employee::count(),
+            'employees'=>\App\Models\employee::count(),
             'appointments'=>\App\Models\appointment::count(),
             'birthreports'=>\App\Models\birthreport::count(),
             'operationreports'=>\App\Models\operationreport::count(),

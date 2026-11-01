@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
 
         User::create([
             'name' =>'accountant',
-            'email' =>'accountant@gmail.com',
+            'email' =>'accountant@example.com',
             'password' =>bcrypt('password'),
             'role_id'=>2,
             'created_at' =>now(),

@@ -4,7 +4,6 @@ use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-// testing gpush
 Route::get('/', function () {
     return view('index');
 });
@@ -50,9 +49,9 @@ Route::middleware(['auth', 'checksuperadmin'])->group(function () {
 
         Route::get('/blocks', App\Http\Livewire\Admins\Blocks::class)->name('blocks');
 
-        Route::get('/admin/hods', App\Http\Livewire\Admins\Hods::class)->name('hods');
+        Route::get('/hods', App\Http\Livewire\Admins\Hods::class)->name('hods');
 
-        Route::get('/admin/requestedappointments', App\Http\Livewire\Admins\RequestedAppointments::class)->name('requestedAppointment');
+        Route::get('/requestedappointments', App\Http\Livewire\Admins\RequestedAppointments::class)->name('requestedAppointment');
 
         Route::get('/subscribers', App\Http\Livewire\Admins\Subscibers::class)->name('subscibers');
 

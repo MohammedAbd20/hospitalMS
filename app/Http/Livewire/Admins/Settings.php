@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Admins;
 
-use App\Models\settings as SettingModel;
+use App\Models\Settings as SettingModel;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 use Illuminate\Support\Facades\Storage;

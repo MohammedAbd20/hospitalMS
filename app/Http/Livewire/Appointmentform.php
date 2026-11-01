@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
-use App\Models\requestedappointment;
+use App\Models\requestedAppointment;
 use Livewire\Component;
 
 class Appointmentform extends Component
@@ -26,7 +26,7 @@ class Appointmentform extends Component
             'message' => 'required|max:550',
             ]);
 
-        requestedappointment::create([
+        requestedAppointment::create([
             'name'          => $this->name,
             'email'         => $this->email,
             'phone'         => $this->phone,
