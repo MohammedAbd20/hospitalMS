@@ -17,7 +17,7 @@ class roomSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        $departments = \App\Models\Department::all()->pluck('id')->toArray(); // Assuming you have a Department model
+        $departments = \App\Models\department::all()->pluck('id')->toArray(); // Assuming you have a Department model
 
         for ($i = 0; $i < 8; $i++) { // Creating 50 rooms
             rooms::create([

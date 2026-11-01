@@ -5,6 +5,7 @@ A full-stack web application built with **Laravel** and **Livewire** for managin
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+![Tests](https://github.com/MohammedAbd20/hospitalMS/actions/workflows/tests.yml/badge.svg)
 
 ## Screenshots
 
@@ -72,6 +73,14 @@ php artisan serve
 
 Open `http://127.0.0.1:8000`.
 
+## Running the tests
+
+```bash
+php artisan test
+```
+
+The feature tests run on in-memory SQLite and cover the public pages, dashboard access control (guest / no role / admin / accountant) and that every admin page renders. They also run on every push through GitHub Actions.
+
 ## Demo admin account
 
 Created by the database seeder, **for local testing only**:
@@ -79,6 +88,9 @@ Created by the database seeder, **for local testing only**:
 | Email | Password |
 |---|---|
 | `admin@example.com` | `password` |
+| `accountant@example.com` | `password` |
+
+Dashboard access is limited to users that have a role (admin / accountant). Accounts created through the public registration form have no role and receive a 403 on `/admin/*`.
 
 Change or remove these credentials before deploying anywhere public.
 
